@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERC20 Token Creator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Your ERC20 Token</h1>
+    <input id="tokenName" type="text" placeholder="Token Name">
+    <input id="tokenSymbol" type="text" placeholder="Token Symbol">
+    <input id="initialSupply" type="number" placeholder="Initial Supply">
+    <input id="website" type="text" placeholder="Website (optional)">
+    <input id="socialMedia" type="text" placeholder="Social Media (optional)">
+    <button id="createTokenBtn">Create Token</button>
+    <div id="result"></div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
